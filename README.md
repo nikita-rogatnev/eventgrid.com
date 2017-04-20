@@ -1,5 +1,7 @@
 # eventgrid.com [![Build status][travis-image]][travis-url]
 
+[![eventgrid](./design/homepage.png)](https://eventgrid.com)
+
 ## Project summary
 * High Resolution: Yes
 * Compatible Browsers: IE11+, Edge, Firefox, Safari, Opera, Chrome
