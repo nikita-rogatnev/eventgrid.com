@@ -1,0 +1,42 @@
+// ------------------------------------------ //
+// MIXINS
+// ------------------------------------------ //
+.container {
+	&__container {
+		display: flex;
+
+		width: 100%;
+		margin: 0 auto;
+		padding: 30px 15px;
+
+		@media (min-width: @tablet-widths) {
+			padding: 60px 15px;
+		}
+
+		@media (min-width: @desktop-widths) {
+			max-width: 1400px;
+			padding: 60px 30px;
+		}
+
+		& > p {
+			@media (min-width: @desktop-widths) {
+				width: calc(~"50% - 15px");
+			}
+		}
+	}
+}
+
+.light {
+	color: rgba(0, 0, 0, 0.5);
+	background: @palette__primary;
+}
+
+.light-grey {
+	color: rgba(0, 0, 0, 0.5);
+	background: #f2f2f2;
+}
+
+.dark {
+	color: rgba(255, 255, 255, 0.5);
+	background: #000000;
+}

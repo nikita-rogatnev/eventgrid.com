@@ -1,0 +1,96 @@
+/* ------------------------------------------ */
+/* HEADER BLOCK
+/* ------------------------------------------ */
+.header {
+	.container();
+
+	&__container {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+}
+
+.header__navigation {
+	width: 100%;
+	padding: 0;
+
+	transition: all 2s ease-out;
+
+	ul {
+		display: flex;
+		flex-direction: column;
+
+		width: 100%;
+		padding: 0;
+
+		@media (min-width: @desktop-widths) {
+			flex-direction: row;
+		}
+	}
+
+	li {
+		width: 100%;
+		padding: 15px;
+
+		list-style-type: none;
+
+		text-align: center;
+
+		@media (min-width: @desktop-widths) {
+			width: auto;
+			padding: 0 15px;
+
+			text-align: right;
+
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+	}
+
+	a {
+		text-transform: uppercase;
+
+		color: @palette__primary;
+	}
+
+	@media (min-width: @desktop-widths) {
+		position: inherit;
+
+		width: auto;
+	}
+
+	&--closed {
+		display: none;
+
+		@media (min-width: @desktop-widths) {
+			display: block;
+		}
+	}
+
+	&--opened {
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		right: 0;
+		left: 0;
+
+		display: flex;
+
+		height: 100vh;
+
+		background: rgba(0, 0, 0, 0.9);
+
+		align-items: center;
+
+		@media (min-width: @desktop-widths) {
+			position: inherit;
+
+			display: block;
+
+			height: auto;
+
+			background: transparent;
+		}
+	}
+}

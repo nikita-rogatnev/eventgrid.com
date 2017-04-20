@@ -1,0 +1,63 @@
+/* ------------------------------------------ */
+/* BTN BLOCK
+/* ------------------------------------------ */
+.btn {
+	position: relative;
+
+	display: inline-block;
+
+	min-width: 160px;
+	height: 40px;
+	padding: 0 16px;
+
+	cursor: pointer;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	text-decoration: none;
+
+	color: @palette__primary;
+	border: none;
+	border-radius: 0;
+	background: @palette__accent;
+
+	font-size: inherit;
+	line-height: 40px;
+
+	touch-action: manipulation;
+	overflow-wrap: normal;
+	flex-shrink: 0;
+
+	&:before {
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		width: 100%;
+		height: 100%;
+
+		content: "";
+		transition-timing-function: linear;
+		transition-duration: 0.2s;
+		transition-property: opacity, box-shadow, -webkit-transform;
+		transition-property: transform, opacity, box-shadow;
+		transition-property: transform, opacity, box-shadow, -webkit-transform;
+		transform: translate3d(0);
+
+		opacity: 0;
+		border: 1px solid @palette__accent;
+	}
+
+	&:hover {
+		opacity: 1;
+		color: @palette__primary;
+		background-color: @palette__accent;
+		box-shadow: 5px 5px rgba(234, 191, 68, 0.5);
+
+		&:before {
+			transform: translate3d(-5px, -5px, 0);
+
+			opacity: 1;
+		}
+	}
+}
