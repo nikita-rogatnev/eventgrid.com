@@ -1,5 +1,7 @@
 # eventgrid.com [![Build status][travis-image]][travis-url]
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rogatnev-nikita/eventgrid.com.svg)](https://greenkeeper.io/)
+
 ## Project summary
 * High Resolution: Yes
 * Compatible Browsers: IE11+, Edge, Firefox, Safari, Opera, Chrome
