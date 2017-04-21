@@ -19,10 +19,14 @@ body {
 	background: @palette__tertiary;
 
 	font-family: "Open Sans", Arial, sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 24px;
 
 	-webkit-font-smoothing: antialiased;
+
+	@media (min-width: @tablet-widths) {
+		font-size: 16px;
+	}
 }
 
 .body--fixed {
@@ -45,6 +49,7 @@ h4 {
 }
 
 p,
+b,
 span,
 strong {
 	display: block;
@@ -65,7 +70,7 @@ h1 {
 h2 {
 	padding-bottom: 15px;
 
-	font-size: 26px;
+	font-size: 20px;
 
 	@media (min-width: @tablet-widths) {
 		font-size: 26px;
@@ -78,8 +83,13 @@ p {
 	opacity: 0.54;
 	color: @palette__primary;
 
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 14px;
+	line-height: 20px;
+
+	@media (min-width: @tablet-widths) {
+		font-size: 16px;
+		line-height: 24px;
+	}
 }
 
 a {
@@ -145,4 +155,9 @@ textarea {
 	&:focus {
 		outline: none;
 	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }
