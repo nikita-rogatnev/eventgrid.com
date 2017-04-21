@@ -2,5 +2,41 @@
 /* CLIENTS BLOCK
 /* ------------------------------------------ */
 .clients {
+	border-top: 1px solid @palette__secondary;
+
 	.container();
+
+	&__container {
+		flex-direction: column;
+
+		align-items: center;
+
+		@media (min-width: @tablet-widths) {
+			flex-direction: row;
+
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		@media (min-width: @desktop-widths) {
+			justify-content: space-between;
+		}
+
+		a {
+			width: 50%;
+			margin: 15px 0;
+
+			text-align: center;
+
+			@media (min-width: @tablet-widths) {
+				width: calc(~"100% / 3");
+			}
+
+			@media (min-width: @desktop-widths) {
+				width: auto;
+
+				flex-wrap: nowrap;
+			}
+		}
+	}
 }

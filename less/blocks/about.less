@@ -3,4 +3,43 @@
 /* ------------------------------------------ */
 .about {
 	.container();
+	.heading();
+
+	&__container {
+		@media (min-width: @tablet-widths) {
+			flex-direction: row;
+
+			align-items: center;
+			flex-wrap: nowrap;
+		}
+
+		@media (min-width: @desktop-widths) {
+			align-items: flex-start;
+		}
+	}
+}
+
+.about__text {
+	width: 100%;
+
+	@media (min-width: @tablet-widths) {
+		width: 50%;
+	}
+}
+
+.about__image {
+	width: 100%;
+	padding-top: 30px;
+
+	line-height: 0;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	@media (min-width: @tablet-widths) {
+		width: 50%;
+		padding-top: 0;
+	}
 }

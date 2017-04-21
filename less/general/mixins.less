@@ -2,8 +2,11 @@
 // MIXINS
 // ------------------------------------------ //
 .container {
+	position: relative;
+
 	&__container {
 		display: flex;
+		flex-direction: column;
 
 		width: 100%;
 		margin: 0 auto;
@@ -14,29 +17,22 @@
 		}
 
 		@media (min-width: @desktop-widths) {
-			max-width: 1400px;
+			max-width: 1200px;
 			padding: 60px 30px;
-		}
-
-		& > p {
-			@media (min-width: @desktop-widths) {
-				width: calc(~"50% - 15px");
-			}
 		}
 	}
 }
 
-.light {
-	color: rgba(0, 0, 0, 0.5);
-	background: @palette__primary;
+.heading {
+	&__heading {
+		width: 100%;
+
+		text-align: center;
+	}
 }
 
-.light-grey {
-	color: rgba(0, 0, 0, 0.5);
-	background: #f2f2f2;
-}
-
-.dark {
-	color: rgba(255, 255, 255, 0.5);
-	background: #000000;
+.links {
+	&__links {
+		text-align: center;
+	}
 }

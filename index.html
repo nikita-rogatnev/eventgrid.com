@@ -54,6 +54,7 @@
     <!-- FAVICONS END -->
 
     <!-- STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.min.css">
     <!-- STYLES END -->
 
@@ -75,15 +76,15 @@
               </span>
             </button>
             <nav class="header__navigation header__navigation--closed">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">FEATURES</a></li>
-                    <li><a href="#">PRICING</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">NEWS &amp; PRESS</a></li>
-                    <li><a href="#">HELP</a></li>
-                    <li><a href="#">LOG IN</a></li>
-                    <li><a href="#">SIGN UP</a></li>
+                <ul class="header__navigation-items">
+                    <li class="header__navigation-item header__navigation-item--active"><a href="#">HOME</a></li>
+                    <li class="header__navigation-item"><a href="#">FEATURES</a></li>
+                    <li class="header__navigation-item"><a href="#">PRICING</a></li>
+                    <li class="header__navigation-item"><a href="#">BLOG</a></li>
+                    <li class="header__navigation-item"><a href="#">NEWS &amp; PRESS</a></li>
+                    <li class="header__navigation-item"><a href="#">HELP</a></li>
+                    <li class="header__navigation-item"><a href="#">LOG IN</a></li>
+                    <li class="header__navigation-item"><a href="#" class="btn">SIGN UP</a></li>
                 </ul>
             </nav>
         </div>
@@ -93,10 +94,17 @@
     <!-- PROMO -->
     <section class="promo">
         <div class="promo__container">
-            <h1>SIMPLE &amp; BEAUTIFUL</h1>
-            <p>Event Registration and Ticketing Platform</p>
-            <a href="#" class="btn">START FOR FREE</a>
-            <a href="#" class="btn">REQUEST A DEMO</a>
+            <div class="promo__heading">
+                <h1>SIMPLE &amp; BEAUTIFUL</h1>
+                <p>Event Registration and Ticketing Platform</p>
+                <div class="promo__links">
+                    <a href="#" class="btn">START FOR FREE</a>
+                    <a href="#" class="btn">REQUEST A DEMO</a>
+                </div>
+            </div>
+            <div class="promo__image">
+                <img src="./img/promo/promo__image.svg" alt="Eventgrid promo images" width="945" height="226">
+            </div>
         </div>
     </section>
     <!-- PROMO END -->
@@ -104,8 +112,13 @@
     <!-- FEATURES -->
     <section class="features">
         <div class="features__container">
-            <h2>SIMPLE &amp; BEAUTIFUL</h2>
-            <p>Event Registration and Ticketing Platform</p>
+            <div class="features__heading">
+                <h2>FEATURES</h2>
+                <p>Event Registration and Ticketing Platform</p>
+            </div>
+            <div class="features__links">
+                <a href="#" class="btn">ALL FEATURES</a>
+            </div>
         </div>
     </section>
     <!-- FEATURES END -->
@@ -113,8 +126,14 @@
     <!-- PRICING -->
     <section class="pricing">
         <div class="pricing__container">
-            <h2>PRICING</h2>
-            <p>Leave complex fee structures behind and get all the features your business needs.</p>
+            <div class="pricing__heading">
+                <h2>PRICING</h2>
+                <p>Leave complex fee structures behind and get all the features your business needs.</p>
+            </div>
+            <div class="pricing__links">
+                <h2>Sign Up for free NOW!</h2>
+                <a href="#" class="btn">START FOR FREE</a>
+            </div>
         </div>
     </section>
     <!-- PRICING END -->
@@ -122,11 +141,16 @@
     <!-- ABOUT US -->
     <section class="about">
         <div class="about__container">
-            <h2>ABOUT US</h2>
-            <p>Eventgrid is an easy way to set up online registration and ticketing for conferences, seminars, concerts, tours and festivals. Our suite of tools provides event managers and marketers the ability to manage all of the elements of their events
-                from a single platform – including everything from the initial announcements and marketing campaigns, to registration, ticketing and CRM; as well as follow-up messaging and analytics.</p>
-            <p>Eventgrid provides online and mobile resources for event management.</p>
-            <p>Thanks for taking the time to check out Eventgrid!</p>
+            <div class="about__text">
+                <h2>ABOUT US</h2>
+                <p>Eventgrid is an easy way to set up online registration and ticketing for conferences, seminars, concerts, tours and festivals. Our suite of tools provides event managers and marketers the ability to manage all of the elements of their
+                    events from a single platform – including everything from the initial announcements and marketing campaigns, to registration, ticketing and CRM; as well as follow-up messaging and analytics.</p>
+                <p>Eventgrid provides online and mobile resources for event management.</p>
+                <p>Thanks for taking the time to check out Eventgrid!</p>
+            </div>
+            <div class="about__image">
+                <img src="./img/about/about__image.svg" alt="Eventgrid about images" width="519" height="332">
+            </div>
         </div>
     </section>
     <!-- ABOUT US END -->
@@ -134,11 +158,11 @@
     <!-- CLIENTS -->
     <section class="clients">
         <div class="clients__container">
-            <a href="#" target="_blank"><img src="./img/clients/clients__1.png" alt="" width="" height=""></a>
-            <a href="#" target="_blank"><img src="./img/clients/clients__1.png" alt="" width="" height=""></a>
-            <a href="#" target="_blank"><img src="./img/clients/clients__1.png" alt="" width="" height=""></a>
-            <a href="#" target="_blank"><img src="./img/clients/clients__1.png" alt="" width="" height=""></a>
-            <a href="#" target="_blank"><img src="./img/clients/clients__1.png" alt="" width="" height=""></a>
+            <a href="#" target="_blank"><img src="./img/clients/clients__1.png" alt="Eventgrid client" width="129" height="22"></a>
+            <a href="#" target="_blank"><img src="./img/clients/clients__2.png" alt="Eventgrid client" width="69" height="54"></a>
+            <a href="#" target="_blank"><img src="./img/clients/clients__3.png" alt="Eventgrid client" width="87" height="26"></a>
+            <a href="#" target="_blank"><img src="./img/clients/clients__4.png" alt="Eventgrid client" width="197" height="28"></a>
+            <a href="#" target="_blank"><img src="./img/clients/clients__5.png" alt="Eventgrid client" width="141" height="18"></a>
         </div>
     </section>
     <!-- CLIENTS END -->
@@ -146,8 +170,16 @@
     <!-- CONTACT US -->
     <section class="contact">
         <div class="contact__container">
-            <h2>CONTACT US</h2>
-            <p>200 Dunellen Avenue<br> Dunellen, NJ 08812<br> (631) 488-0522<br> Email: hello@eventgrid.com</p>
+            <div class="contact__text">
+                <h2>CONTACT US</h2>
+                <p>200 Dunellen Avenue<br> Dunellen, NJ 08812<br> (631) 488-0522<br> Email: hello@eventgrid.com</p>
+            </div>
+            <div class="contact__social">
+                <a href="#" target="_blank"><img src="./img/contact/contact__1.svg" alt="google +" width="24" height="15"></a>
+                <a href="#" target="_blank"><img src="./img/contact/contact__2.svg" alt="facebook" width="22" height="22"></a>
+                <a href="#" target="_blank"><img src="./img/contact/contact__3.svg" alt="linkedin" width="22" height="20"></a>
+                <a href="#" target="_blank"><img src="./img/contact/contact__4.svg" alt="twitter" width="22" height="18"></a>
+            </div>
         </div>
     </section>
     <!-- CONTACT US END -->
@@ -155,7 +187,17 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer__container">
-            <span class="footer__copyright">&copy; 2016 Eventgrid. All rights reserved</span>
+            <div class="footer__copyright">
+                <span>&copy; 2016 Eventgrid. All rights reserved</span>
+            </div>
+            <div class="footer__navigation">
+                <ul>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">PRIVACY POLICE</a></li>
+                    <li><a href="#">TERMS OF SERVICE</a></li>
+                    <li><a href="#" class="btn">GET STARTED</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
     <!-- FOOTER END -->

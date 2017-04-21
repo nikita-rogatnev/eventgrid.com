@@ -1,6 +1,83 @@
 /* ------------------------------------------ */
-/* CONTACTS BLOCK
+/* CONTACT BLOCK
 /* ------------------------------------------ */
-.contacts {
+.contact {
+	color: @palette__tertiary;
+	background: url(../img/contact/contact__map.png) no-repeat center center;
+	background-size: cover;
+
 	.container();
+
+	p {
+		color: @palette__tertiary;
+	}
+
+	&__container {
+		position: relative;
+		z-index: 2;
+
+		@media (min-width: @tablet-widths) {
+			flex-direction: row;
+
+			align-items: flex-start;
+			flex-wrap: nowrap;
+		}
+	}
+
+	&:after {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		left: 0;
+
+		display: block;
+
+		width: 100%;
+		height: 100%;
+
+		content: "";
+
+		background: rgba(36, 50, 84, 0.82);
+	}
+}
+
+.contact__text {
+	width: 100%;
+
+	@media (min-width: @tablet-widths) {
+		width: 50%;
+	}
+}
+
+.contact__social {
+	display: flex;
+	flex-direction: row;
+
+	width: 100%;
+
+	text-align: center;
+
+	line-height: 0;
+
+	align-items: center;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+
+	@media (min-width: @tablet-widths) {
+		width: 50%;
+		padding-top: 0;
+
+		text-align: right;
+
+		justify-content: flex-end;
+
+		a {
+			margin: 0 10px 0;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
 }

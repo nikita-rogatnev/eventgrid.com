@@ -5,8 +5,14 @@
 	.container();
 
 	&__container {
+		flex-direction: row;
+
 		padding-top: 15px;
 		padding-bottom: 15px;
+
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: center;
 	}
 }
 
@@ -14,21 +20,21 @@
 	width: 100%;
 	padding: 0;
 
-	transition: all 2s ease-out;
-
-	ul {
+	.header__navigation-items {
 		display: flex;
 		flex-direction: column;
 
 		width: 100%;
 		padding: 0;
 
+		align-items: center;
+
 		@media (min-width: @desktop-widths) {
 			flex-direction: row;
 		}
 	}
 
-	li {
+	.header__navigation-item {
 		width: 100%;
 		padding: 15px;
 
