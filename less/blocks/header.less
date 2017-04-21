@@ -2,6 +2,8 @@
 /* HEADER BLOCK
 /* ------------------------------------------ */
 .header {
+	font-size: 12px;
+
 	.container();
 
 	&__container {
@@ -41,6 +43,24 @@
 		list-style-type: none;
 
 		text-align: center;
+		text-transform: uppercase;
+
+		opacity: 0.54;
+
+		a {
+			color: @palette__primary;
+		}
+
+		&:hover,
+		&:last-child {
+			opacity: 1;
+		}
+
+		&--active {
+			pointer-events: none;
+
+			opacity: 1;
+		}
 
 		@media (min-width: @desktop-widths) {
 			width: auto;
@@ -52,12 +72,6 @@
 				padding-right: 0;
 			}
 		}
-	}
-
-	a {
-		text-transform: uppercase;
-
-		color: @palette__primary;
 	}
 
 	@media (min-width: @desktop-widths) {
