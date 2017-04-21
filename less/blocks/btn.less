@@ -28,10 +28,24 @@
 	overflow-wrap: normal;
 	flex-shrink: 0;
 
-
 	&:hover {
 		opacity: 1;
-		color: @palette__primary;
-		background-color: @palette__accent;
+		color: @palette__accent;
+		border: 1px solid @palette__accent;
+		background: @palette__tertiary;
+	}
+
+	&--transparent {
+		opacity: 1;
+		color: @palette__accent;
+		border: 1px solid @palette__accent;
+		background: @palette__tertiary;
+
+		&:hover {
+			opacity: 1;
+			color: @palette__tertiary;
+			border: 1px solid transparent;
+			background: linear-gradient(135deg, rgba(244, 101, 90, 1) 0%, rgba(255, 83, 128, 1) 100%);
+		}
 	}
 }

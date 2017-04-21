@@ -76,6 +76,16 @@
 			opacity: 1;
 		}
 
+		&:last-child {
+			a {
+				color: @palette__tertiary;
+
+				&:hover {
+					color: @palette__accent;
+				}
+			}
+		}
+
 		&--active {
 			pointer-events: none;
 
